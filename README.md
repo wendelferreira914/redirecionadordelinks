@@ -1,5 +1,4 @@
 # redirecionadordelinks
-Ótimo! O README deve ser claro e direto. Aqui está um resumo que você pode usar, pronto para ser copiado e colado, com algumas seções para facilitar a leitura.
 
 ### Redirecionamento de Links para Lojas de Aplicativos
 
