@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Redirecionando para a loja de aplicativos...</title>
-    <script type="text/javascript">
-        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-        if (/android/i.test(userAgent)) {
-            window.location.href = "https://play.google.com/store/apps/details?id=com.luizalabs.mlapp&hl=pt_BR";
+{
+    "components": [
+        ...
+        {
+            "type": "button",
+            "subType": "url",
+            "index": "0",
+            "parameters": [
+                {
+                    "type": "text",
+                    "text": "Link para o App" // Texto que aparecerá no botão
+                }
+            ],
+            "url": "https://[seu-usuario].github.io/[nome-do-repositorio]" // O link que criamos
         }
-
-        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            window.location.href = "https://apps.apple.com/br/app/891130066";
-        }
-
-
-    </script>
-</head>
-<body>
-    <p>Utilize um aparelho celular para ser redirecionado para a página de avaliação do app</p>
-</body>
-</html>
+    ]
+}
