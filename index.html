@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecionando para a loja de aplicativos...</title>
+    <script type="text/javascript">
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Redireciona para a Google Play Store (Android)
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.luizalabs.mlapp&hl=pt_BR";
+        }
+
+        // Redireciona para a Apple App Store (iOS)
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/br/app/891130066";
+        }
+
+        // Redirecionamento de fallback (opcional, para desktops ou outros)
+        // window.location.href = "https://seusite.com.br";
+
+    </script>
+</head>
+<body>
+    <p>Redirecionando você para a loja de aplicativos correta...</p>
+</body>
+</html>
